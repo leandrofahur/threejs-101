@@ -3,6 +3,8 @@ import { useRef } from "react";
 import { useFrame, extend, useThree } from "@react-three/fiber";
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls.js";
 
+import CustomObject from "./CustomObject";
+
 extend({ OrbitControls });
 
 export default function Experience() {
@@ -51,6 +53,8 @@ export default function Experience() {
         <planeGeometry />
         <meshBasicMaterial color="greenyellow" />
       </mesh>
+
+      <CustomObject />
     </>
   );
 }
